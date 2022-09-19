@@ -4,6 +4,7 @@ const menu_close = document.querySelector('.hamburger-close');
 const mobile_menu = document.querySelector('.mobile-nav');
 const faqs_box = document.querySelectorAll('.faqs-box');
 const faqs_expanded = document.querySelectorAll('.arrow');
+const question_toggle = document.querySelectorAll('.question');
 const answer_toggle = document.querySelectorAll('.answer');
 
 
@@ -20,6 +21,7 @@ for (let i = 0; i < faqs_expanded.length; i++) {
     faqs_box[i].addEventListener('click', function(){
         faqs_expanded[i].classList.toggle('expanded');
         answer_toggle[i].classList.toggle('dropdown');
+        question_toggle[i].classList.toggle('active-q');
     });
 };
 

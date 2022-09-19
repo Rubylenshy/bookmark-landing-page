@@ -367,6 +367,9 @@ h1{
     font-weight: var(--fw-bold);
     font-size: 18px;
 }
+.question.active-q{
+    color: var(--soft-red);
+}
 .answer{
     line-height: 1.7em;
     display: none;
