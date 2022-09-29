@@ -48,19 +48,16 @@ for (let f = 0; f < tabLink.length; f++) {
 }
 
 tabLink[0].addEventListener('click', function(){
-    console.log('Simple Bookmarking');
     tabCard[0].style.display = 'inherit';
     tabCard[1].style.display = 'none';
     tabCard[2].style.display = 'none';
 });
 tabLink[1].addEventListener('click', function(){
-    console.log('Speedy Searching');
     tabCard[1].style.display = 'inherit';
     tabCard[0].style.display = 'none';
     tabCard[2].style.display = 'none';
 });
 tabLink[2].addEventListener('click', function(){
-    console.log('Easy Sharing');
     tabCard[2].style.display = 'inherit';
     tabCard[0].style.display = 'none';
     tabCard[1].style.display = 'none';
@@ -79,13 +76,11 @@ contact_btn.addEventListener('click', (e)=>{
     const emailRegex = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+)(\.[a-z]+)(.[a-z]+)?$/
 
     if (emailRegex.test(email_value)) {
-        console.log("Valid Email ID");
         error.style.display = 'none';
         noError.style.display = 'flex';
         email.classList.add('green')
         email.classList.remove('red')
     } else{
-        console.log('Invalid Email ID');
         error.style.display = 'flex';
         noError.style.display = 'none';
         email.classList.remove('green')
